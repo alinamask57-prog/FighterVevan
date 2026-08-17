@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fighter Arena</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="game">
+
+    <header class="topbar">
+      <h1>⚔️ FIGHTER ARENA</h1>
+
+      <div class="score">
+        <span id="roundText">ROUND 1</span>
+        <span id="timer">60</span>
+      </div>
+    </header>
+
+    <div class="health-area">
+
+      <div class="fighter-name">
+        <span>PLAYER</span>
+        <div class="health-box">
+          <div id="playerHealth" class="health player-health"></div>
+        </div>
+      </div>
+
+      <div class="fighter-name enemy-name">
+        <span>CPU</span>
+        <div class="health-box">
+          <div id="enemyHealth" class="health enemy-health"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <main id="arena">
+
+      <div class="background">
+        <div class="sun"></div>
+        <div class="mountain m1"></div>
+        <div class="mountain m2"></div>
+        <div class="floor"></div>
+      </div>
+
+      <div id="player" class="fighter player">
+        <div class="shadow"></div>
+        <div class="fighter-body">
+          <div class="head"></div>
+          <div class="torso"></div>
+          <div class="arm arm-back"></div>
+          <div class="arm arm-front"></div>
+          <div class="leg leg-back"></div>
+          <div class="leg leg-front"></div>
+        </div>
+      </div>
+
+      <div id="enemy" class="fighter enemy">
+        <div class="shadow"></div>
+        <div class="fighter-body">
+          <div class="head"></div>
+          <div class="torso"></div>
+          <div class="arm arm-back"></div>
+          <div class="arm arm-front"></div>
+          <div class="leg leg-back"></div>
+          <div class="leg leg-front"></div>
+        </div>
+      </div>
+
+      <div id="message" class="message">
+        <h2>READY?</h2>
+        <button id="startBtn">START FIGHT</button>
+      </div>
+
+    </main>
+
+    <div class="controls">
+
+      <div class="keyboard">
+        <div>
+          <button data-key="w">W</button>
+        </div>
+
+        <div>
+          <button data-key="a">A</button>
+          <button data-key="s">S</button>
+          <button data-key="d">D</button>
+        </div>
+      </div>
+
+      <div class="attacks">
+        <button data-action="punch" class="punch">J<br><small>PUNCH</small></button>
+        <button data-action="kick" class="kick">K<br><small>KICK</small></button>
+        <button data-action="special" class="special">L<br><small>SPECIAL</small></button>
+      </div>
+
+    </div>
+
+    <footer>
+      <p>W = Jump &nbsp; | &nbsp; A/D = Move &nbsp; | &nbsp; J = Punch &nbsp; | &nbsp; K = Kick &nbsp; | &nbsp; L = Special</p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
